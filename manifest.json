@@ -1,0 +1,40 @@
+{
+  "name": "Outliner",
+  "description": "Runs a news article through outline automatically",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://outline.com/*",
+    "https://www.economist.com/*"
+  ],
+  "commands": {
+    "open_outline": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O"
+      },
+      "description": "Redirect to outline, with the current url"
+    }
+  },
+  "background": {
+    "service_worker": "outline.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    }
+  },
+  "icons": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+  }
+}
